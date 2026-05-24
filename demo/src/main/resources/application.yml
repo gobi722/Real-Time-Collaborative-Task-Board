@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sentinelswitch
+    username: sentinel
+    password: sentinel_local_secret
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  
+server:
+  port: 8080
+
+jwt:
+  secret: mySecretKey12345678901234567890123456789012
+  expiration: 86400000  
